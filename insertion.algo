@@ -1,0 +1,20 @@
+
+
+ PROCEDURE insertion_sort(var arr:ARRAY_OF INTEGER)
+ vari,j,current:INTEGER;
+
+ BEGIN
+
+ FOR i FROM 1 to arr.length-1 do
+ current :=arr[i]
+ j:=i-1
+ while (j>=0 AND  arr[j]>current ) Do 
+
+ arr[j+1]:=arr[j];
+ j:=j-1;
+ end _while
+ 
+ arr[j+1]=current 
+ end for
+
+ end 
